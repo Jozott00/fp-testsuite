@@ -90,7 +90,7 @@ wandle_in_rb_test =
     "wandle_in_rb"
     [
       testCase "1" $ bi (wandle_in_rb "") @?= "Leer",
-      testCase "2" $ bi (wandle_in_rb "A") @?= "0>A<0",
-      testCase "3" $ bi (wandle_in_rb "ABC") @?= "0>ABC<2",
-      testCase "4" $ bi (wandle_in_rb "Test Wort") @?= "0>Test Wort<8"
+      testCase "2" $ bi (wandle_in_rb "A") @?= "1>A<1",
+      testCase "3" $ bi (wandle_in_rb "ABC") @?= "1>ABC<3",
+      testCase "4" $ bi (wandle_in_rb "Test Wort") @?= "1>Test Wort<9"
     ]
